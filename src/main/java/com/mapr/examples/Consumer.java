@@ -47,7 +47,7 @@ public class Consumer {
         //noinspection InfiniteLoopStatement
         while (true) {
             // read records with a short timeout. If we time out, we don't really care.
-            ConsumerRecords<String, String> records = consumer.poll(200);
+            ConsumerRecords<String, String> records = consumer.poll(200); 
             if (records.count() == 0) {
                 timeouts++;
             } else {
