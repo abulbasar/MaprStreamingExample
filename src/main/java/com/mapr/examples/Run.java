@@ -22,7 +22,7 @@ public class Run {
                 DBConsumer.main(args);
                 break;
             default:
-                throw new IllegalArgumentException("Don't know how to do " + args[0]);
+                throw new IllegalArgumentException("Don't know how to do " + args[0]); 
         }
     }
 }
