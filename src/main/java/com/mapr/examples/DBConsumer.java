@@ -38,7 +38,7 @@ public class DBConsumer {
     final String TOPIC_SUMMARY_MARKERS = "/user/mapr/streams:summary";
 
 
-    Table fastMessagesTable = getTable("/tables/raw");
+    Table fastMessagesTable = getTable("/tables/raw"); 
 
     // and the consumer
     KafkaConsumer<String, String> consumer;
